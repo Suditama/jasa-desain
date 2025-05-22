@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasa Desain - Portofolio & Pemesanan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Nama Kamu</h1>
+    <p>Desainer Grafis & Web Freelance</p>
+  </header>
+
+  <section class="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah desainer grafis profesional yang siap membantu Anda membuat logo, poster, feed Instagram, dan banyak lagi. Kualitas desain modern & harga bersahabat.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Portofolio Desain</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Logo Kopi" />
+        <p>Logo Toko Kopi</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Poster Musik" />
+        <p>Poster Event Musik</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Feed IG" />
+        <p>Feed Instagram Fashion</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <h2>Kalkulator Harga Desain</h2>
+    <label>Jenis Desain:</label>
+    <select id="designType">
+      <option value="logo">Logo (Rp150.000)</option>
+      <option value="poster">Poster (Rp100.000)</option>
+      <option value="feed">Feed Instagram (Rp75.000)</option>
+    </select>
+
+    <label>Jumlah Desain:</label>
+    <input type="number" id="quantity" min="1" value="1" />
+
+    <h3>Total: <span id="total">Rp0</span></h3>
+  </section>
+
+  <section class="form-container">
+    <h2>Pemesanan Desain</h2>
+    <form id="orderForm">
+      <label>Nama:</label>
+      <input type="text" id="name" required />
+
+      <label>Jenis Desain:</label>
+      <select id="service">
+        <option value="Logo">Logo</option>
+        <option value="Poster">Poster</option>
+        <option value="Feed Instagram">Feed Instagram</option>
+      </select>
+
+      <label>Deskripsi Pesanan:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nama Kamu | Jasa Desain Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
