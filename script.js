@@ -33,7 +33,7 @@ orderForm.addEventListener('submit', function(e) {
   }
 
   const whatsappMessage = `Halo, saya ${name} ingin memesan jasa desain: ${service}. Detail: ${message}`;
-  const whatsappUrl = 'https://wa.me/6281234567890?text=' + encodeURIComponent(whatsappMessage);
+  const whatsappUrl = 'https://wa.me/6287880774859?text=' + encodeURIComponent(whatsappMessage);
 
   window.open(whatsappUrl, '_blank');
 });
