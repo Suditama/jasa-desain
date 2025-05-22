@@ -2,7 +2,6 @@
 const designType = document.getElementById('designType');
 const quantity = document.getElementById('quantity');
 const total = document.getElementById('total');
-
 function updateTotal() {
   let price = 0;
   switch (designType.value) {
